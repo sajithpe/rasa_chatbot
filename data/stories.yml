@@ -1,0 +1,56 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+
+- story: form for available programs 
+  steps:
+  - intent: available_programs
+  - action: utter_tell_programs
+
+- story: bsc programs
+  steps:
+  - intent: available_bsc
+  - action: utter_tell_bsc
+
+- story: bsc cost
+  steps:
+  - intent: cost_bsc
+  - action: utter_tell_fee_bsc
+
+- story: diploma programs
+  steps:
+  - intent: available_diploma
+  - action: utter_tell_diploma
+
+- story: diploma cost
+  steps:
+  - intent: cost_diploma
+  - action: utter_tell_fee_diploma
+

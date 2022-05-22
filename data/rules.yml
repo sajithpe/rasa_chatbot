@@ -1,0 +1,37 @@
+version: "2.0"
+
+rules:
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+
+- rule: available programs
+  steps:
+  - intent: available_programs
+  - action: utter_tell_programs
+
+- rule: bsc fee
+  steps:
+  - intent: cost_bsc
+  - action: utter_tell_fee_bsc
+
+- rule: available bsc
+  steps:
+  - intent: available_bsc
+  - action: utter_tell_bsc
+
+- rule: diploma fee
+  steps:
+  - intent: cost_diploma
+  - action: utter_tell_fee_diploma
+
+- rule: available diploma
+  steps:
+  - intent: available_diploma
+  - action: utter_tell_diploma

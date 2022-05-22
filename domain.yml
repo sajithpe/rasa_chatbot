@@ -1,0 +1,63 @@
+version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - available_programs
+  - fees
+  - available_bsc
+  - cost_bsc
+  - available_diploma
+  - cost_diploma
+
+entities:
+  - course
+
+responses:
+  utter_greet:
+  - text: "Hey! How are you?"
+
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great, carry on!"
+
+  utter_goodbye:
+  - text: "Bye"
+
+  utter_iamabot:
+  - text: "I am a bot, powered by Rasa."
+
+  utter_tell_programs:
+  - text: "We have Diploma/ HND/ Bsc and MBA programs"
+
+  utter_tell_bsc:
+  - text: "We cover bsc in : Software engineering/ Networking and Cyber security"
+
+  utter_tell_fee_bsc:
+  - text: "Course fee is 300,000LKR and university fee is 150,000LKR"
+
+  utter_tell_diploma:
+  - text: "We cover diploma in : Software engineering/ Networking/ Graphic Designing and Hardware Engineering/ Autocad"
+
+  utter_tell_fee_diploma:
+  - text: "Course fee is 30,000LKR and Admission fee is 15000LKR"
+
+actions:
+  - action_tell_fee
+  - action_tell_programs
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

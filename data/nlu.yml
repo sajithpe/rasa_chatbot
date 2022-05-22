@@ -1,0 +1,181 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - good afternoon
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: out_of_scope
+  examples: |
+    - I want to order food
+    - What is 2 + 2?
+    - Who’s the US President?
+    - I need a job
+
+- intent: tom
+  examples: |
+    - hello tom
+    - hi tom
+    - hey tom
+
+- intent: about_university
+  examples: |
+    - What is the informations you have about ABC university?
+    - Tell me something about ABC
+    - What do you know about ABC university?
+    - What can I get from you about ABC
+    - What is ABC?
+    - Tell me about ABC
+
+- intent: available_programs
+  examples: |
+    - ABC offers programs like
+    - which courses are available?
+    - Which programs are provided at ABC?
+    - which courses are available at ABC?
+    - What are the courses available at ABC?
+    - What are the programs available at ABC?
+    - Tell me about the programs available at ABC.
+
+- intent: available_bsc
+  examples: |
+    - What about bsc?
+    - what streams available for bsc?
+    - Which streams covered in bsc?
+    - Tell me about bsc.
+
+- intent: cost_bsc
+  examples: |
+    - How much bsc?
+    - fees for bsc?
+    - Course fee bsc?
+    - Tell me about the cost for bsc.
+
+- intent: available_diploma
+  examples: |
+    - What about diploma?
+    - what streams available for diploma?
+    - Which streams covered in diploma?
+    - Tell me about diploma.
+
+- intent: cost_diploma
+  examples: |
+    - How much diploma?
+    - fees for diploma?
+    - Course fee diploma?
+    - Tell me about the cost for diploma.
+
+- intent: fees
+  examples: |
+    - How much fees are needed to be paid?
+    - Tell me the fees for?
+    - How much I have to pay to take an admission in this course?
+    - What is the fee for [bsc](course)?
+    - How much fees for [computer engineering](course)?
+    - Fees for [networking](course)?
+    - How much money I have to pay for this [graphic design](course)?
+    - Fees required for this (course)?
+    - What is the fees for this (course)?
+    - Fees for [BCA](course) 
+    - How much fees I have to pay for admission in [bca](course)?
+    - How much fees are needed to be paid for [MBA](course)?
+    - Fees required to take admission in [bca](course).
+    - what is the fees for [mba](course) course?
+    - What is the fees for [BBA](course) students?
+    - what is the fees for [diploma](field)?
+    - fees
+
+- lookup:
+  examples: |
+    - bsc
+    - mba
+    - diploma
+    - hnd
+    - certificate
+    - msc
